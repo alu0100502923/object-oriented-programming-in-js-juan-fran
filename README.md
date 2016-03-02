@@ -5,7 +5,7 @@ Este repositorio aloja la práctica de conversión de tipos, realizada con html,
 
 **Repositorio GitHuB**
 
-* [Repositorio]()
+* [Repositorio](https://github.com/alu0100502923/object-oriented-programming-in-js-juan-fran/)
 
 **Página de la práctica**
 
@@ -14,4 +14,3 @@ Este repositorio aloja la práctica de conversión de tipos, realizada con html,
 **Página del autor**
 
 * [Web Author]()
-
