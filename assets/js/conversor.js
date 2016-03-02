@@ -52,17 +52,37 @@
     };
   }
 
+  Temperatura.prototype = new Medida();
+  Temperatura.prototype.constructor = Temperatura;
+
   function Celsius(valor)
   {
+    Temperatura.call(this, valor, "Celsius");
   }
+
+  Celsius.prototype = new Temperatura();
+  Celsius.prototype.constructor = Celsius;
 
   function Farenheit(valor)
   {
+    Temperatura.call(this, valor, "Fahrenheit");
   }
+
+  Fahrenheit.prototype = new Temperatura();
+  Fahrenheit.prototype.constructor = Fahrenheit;
+
+  function Kelvin(valor) {
+      Temperatura.call(this, valor, "Kelvin");
+    }
+
+    Kelvin.prototype = new Temperatura();
+    Kelvin.prototype.constructor = Kelvin;
+
 
   exports.Temperatura = Temperatura;
   exports.Celsius = Celsius;
   exports.Farenheit = Farenheit;
+  exports.Kelvin = Kelvin;
 
   exports.convertir = function() {
     var valor     = document.getElementById('convert').value,
