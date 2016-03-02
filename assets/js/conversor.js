@@ -14,10 +14,20 @@
     }
   }
 
-  function Temperatura(valor,tipo)
-  {
-    /* tipo es opcional. Debería admitir new Medida("45.2 F") */
-  }
+  function Temperatura(valor, tipo) {
+    Medida.call(this, valor, tipo);
+
+    this.toCelsius = function() {
+      var result;
+      var tipo = this.getTipo().toLowerCase();
+      if ("fahrenheit".match(tipo))
+        result = (this.getValue() - 32) * 5 / 9;
+      else if ("kelvin".match(tipo))
+        result = this.getValue() - 273.15;
+      else
+        result = this.getValue();
+      return result;
+    };
 
   function Celsius(valor)
   {
