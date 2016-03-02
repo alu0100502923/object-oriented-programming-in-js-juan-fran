@@ -13,4 +13,5 @@ Este repositorio aloja la práctica de conversión de tipos, realizada con html,
 
 **Página del autor**
 
-* [Web Author]()
+* [Juan Oliva](https://alu0100502923.github.io/)
+* [Francisco Palacios](https://franjpr.github.io/)

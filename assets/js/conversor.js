@@ -28,6 +28,29 @@
         result = this.getValue();
       return result;
     };
+    this.toFahrenheit = function() {
+      var result;
+      var tipo = this.getTipo().toLowerCase();
+      if ("celsius".match(tipo))
+        result = (this.getValue() * 9 / 5) + 32;
+      else if ("kelvin".match(tipo))
+        result = (this.getValue() * 9 / 5) - 459.67;
+      else
+        result = this.getValue();
+      return result;
+    };
+    this.toKelvin = function() {
+      var result;
+      var tipo = this.getTipo().toLowerCase();
+      if ("celsius".match(tipo))
+        result = this.getValue() + 273.15;
+      else if ("fahrenheit".match(tipo))
+        result = (this.getValue() + 459.67) * 5 / 9;
+      else
+        result = this.getValue();
+      return result;
+    };
+  }
 
   function Celsius(valor)
   {
