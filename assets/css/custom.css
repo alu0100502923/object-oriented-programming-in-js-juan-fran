@@ -1,5 +1,5 @@
 html {
-    background-color: #eee;
+  background: linear-gradient(to right, #ea5757, #00abfa);
 }
 
 
@@ -15,6 +15,7 @@ footer {
 footer a {
     color: #FFF;
     text-decoration: none;
+    display: block;
 }
 
 .app {
@@ -22,7 +23,14 @@ footer a {
 }
 
 h4 {
-    font-weight: 500;
+  font-weight: normal;
+ font-family: 'Great Vibes';
+ background: #4c1f34;
+ padding: 5px 15px;
+margin: 50px;
+ color: white;
+ display:inline-block;
+ border-radius: 30px;
 }
 
 span {
