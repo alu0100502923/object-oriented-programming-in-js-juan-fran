@@ -89,8 +89,8 @@
      elemento = document.getElementById('converted'),
      tipos_aceptados = ["c", "f", "k"],
      regexp = XRegExp(
-       '(?<numero>    [+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?)# valor  \n\
-        (?<tipo>       [a-z]+)[ ]+(?:to[ ]+)?\
+       '(?<numero>    [+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?[ ]*)\
+        (?<tipo>      [a-z]+)[ ]+(?:to[ ]+)?\
         (?<tipo2> [a-z]+)[ ]*$', 'xi'),
      valor = XRegExp.exec(valor, regexp);
 
