@@ -9,7 +9,7 @@ footer {
     left: 0;
     width: 100%;
     padding: 10px;
-    background-color: #222;
+    background-color: #4c1f34;
 }
 
 footer a {
@@ -34,7 +34,7 @@ margin: 50px;
 }
 
 span {
-    color: green;
+    color: blue;
 }
 
 @media (max-width: 550px) {
